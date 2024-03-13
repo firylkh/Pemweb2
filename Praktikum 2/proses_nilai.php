@@ -7,12 +7,12 @@ $uas = $_GET ['uas'];
 $tugas = $_GET ['tugas'];
 
 //hitung nilai total (30% UTS + 35% UAS + Tugas 35%)
-$nilai_total + (30/100 * $uts) + (35/100 * $uas) + (35/100 * $tugas)
+$nilai_total + (30/100 * $uts) + (35/100 * $uas) + (35/100 * $tugas);
 
 if($nilai_total > 55) {
-    $hasil = 'Lulus'
+    $hasil = 'Lulus';
 } else {
-    $has
+    $hasil = 'Tidak Lulus';
 }
  
 
