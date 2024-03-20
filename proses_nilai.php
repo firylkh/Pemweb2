@@ -38,11 +38,11 @@ if($nilai_total > 0 && $nilai_total <=35) {
 
 //hasil input
 echo "Nama Lengkap: $nama";
-echo "<br>Matkul: $matkul";
-echo "<br>Uts: $uts";
-echo "<br>uas $uas";
-echo "<br>tugas: $tugas";
-echo "<br>hasil: $hasil";
+echo "<br>Mata Kuliah: $matkul";
+echo "<br>UTS: $uts";
+echo "<br>UAS $uas";
+echo "<br>Tugas: $tugas";
+echo "<br>Hasil: $hasil";
 echo "<br>Grade: $grade";
 
 ?>

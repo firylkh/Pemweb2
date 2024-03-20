@@ -29,7 +29,7 @@ foreach ($skills as $value){
 //mencari kategori skill berdasarkan skor
 $kategori_skill = '';
 if ($total_skor == 0) {
-    $kategori_skill = 'Tidak memadai';
+    $kategori_skill = 'Tidak Memadai';
 }
 else if ($total_skor <= 40){
     $kategori_skill = 'Kurang';
