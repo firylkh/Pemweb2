@@ -8,11 +8,33 @@
     $pasiens= $dbh->query($query);
     ?>
   <main>
-      <div class="container-fluid px-4">
-          <div class="d-flex mt-4">
-          <h3>Daftar Pasien</h3>
-          <a href="" class="btn btn-primary ms-auto">+Pasien</a>
-          </div>
+  <style> 
+    h3{ 
+        font-family: poppins, sans-serif; 
+        font-weight: 600; 
+        text-align: center; 
+    } 
+</style> 
+ 
+<main> 
+<style> 
+    h3{ 
+        font-family: poppins, sans-serif; 
+        font-weight: 600; 
+        text-align: center; 
+        font-size: 35px;
+    } 
+</style> 
+ 
+<main> 
+    <div class="container-fluid px-4"> 
+    <h3 class="mt-5">Data Pasien</h3> 
+        <div class= "d-flex mt-4"> 
+        <a href="dashboard.php" class="btn btn-primary"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i> <strong>Kembali</strong></a> 
+        
+        <a href="pasien_create.php" class="btn btn-primary ms-auto"><strong>+Tambah</strong></a> 
+         
+        </div>
 
           <table class="table mt-4">
             <tr>
@@ -37,8 +59,10 @@
                 <td><?= $pasien ['gender'] ?></td>
                 <td><?= $pasien ['alamat'] ?></td>
                 <td>
-                    <a href="#" class="btn btn-primary"><i class="fas fa-edit"></i></a>
-                    <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                    <a href="pasien_edit.php?id=<?= $pasien ['id'] ?>" class="btn btn-primary">
+                      <i class="fas fa-edit"></i></a>
+                    <a href="pasien_delete.php?id=<?= $pasien ['id'] ?>" class="btn btn-danger">
+                      <i class="fas fa-trash"></i></a>
                 </td>
               </tr>
 
